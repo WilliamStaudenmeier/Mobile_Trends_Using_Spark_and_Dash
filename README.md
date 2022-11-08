@@ -1,4 +1,4 @@
-# PlayStore_and_AppStore_Trends_Using_Spark_and_Dash
+# Mobile Trends Using Spark_and_Dash
 
 This is a light-weight Dash app using Python and Spark on the backend to asyncronously process large files of PlayStore and AppStore data.  
 
