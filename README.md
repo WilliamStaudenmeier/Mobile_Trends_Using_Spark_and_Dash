@@ -1,6 +1,6 @@
 # PlayStore_and_AppStore_Trends_Using_Spark_and_Dash
 
-This is a light-weight Dash app using Python and Spark on the backend to process large files of PlayStore and AppStore data.  
+This is a light-weight Dash app using Python and Spark on the backend to asyncronously process large files of PlayStore and AppStore data.  
 
 The app consists of three main files:
 - app.py (entrypoint)
