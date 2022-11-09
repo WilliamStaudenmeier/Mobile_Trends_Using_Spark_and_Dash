@@ -15,7 +15,7 @@ The application runs on Python 3.8.  It will not run on Python 3.10 without refa
 
 Once in the directory, run these commands in order:
 
-- python3 -m pip install --user virtualenv (unless you already have venv or virtualenv installed)
+- python3 -m pip install --user virtualenv (unless you already have venv or virtualenv installed); you can also run this without --user
 - python3.8 -m venv env 
 - source env/bin/activate
 - pip install -r requirements.txt
