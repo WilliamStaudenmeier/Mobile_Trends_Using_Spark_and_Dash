@@ -4,7 +4,7 @@ This is a light-weight Dash app using Python and Spark on the backend to asyncro
 
 You can get the data files for Google here: https://www.kaggle.com/datasets/gauthamp10/google-playstore-apps (Google-Playstore.csv), and for Apple here: https://www.kaggle.com/datasets/gauthamp10/apple-appstore-apps (appleAppData.csv).  
 
-First, copy these files into the same directory: Mobile_Trends_Using_Spark_and_Dash, then navigate to the same directory in the command line or editor of your choice.
+First, copy these files into the directory, Mobile_Trends_Using_Spark_and_Dash, then navigate to the same directory in the command line or editor of your choice.
 
 The app consists of three main files:
 - app.py (entrypoint)
