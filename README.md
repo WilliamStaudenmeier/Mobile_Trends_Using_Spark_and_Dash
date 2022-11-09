@@ -4,7 +4,7 @@ This is a light-weight Dash app using Python and Spark on the backend to asyncro
 
 You can get the data files for Google here: https://www.kaggle.com/datasets/gauthamp10/google-playstore-apps (Google-Playstore.csv), and for Apple here https://www.kaggle.com/datasets/gauthamp10/apple-appstore-apps (appleAppData.csv).  
 
-First, copy these files into the same directory: Mobile_Trends_Using_Spark_and_Dash.
+First, copy these files into the same directory: Mobile_Trends_Using_Spark_and_Dash, then navigate to this directory in the command line or editor of your choice.
 
 The app consists of three main files:
 - app.py (entrypoint)
@@ -12,6 +12,8 @@ The app consists of three main files:
 - controller.py (loads and cleans data files)
 
 The application runs on Python 3.8.  It will not run on Python3.10 without refactoring the Collections library which no longer includes Iterable as of 3.10.
+
+Once in the directory, run these commands in order:
 
 - python3 -m pip install --user virtualenv (unless you already have venv or virtualenv installed)
 - python3.8 -m venv env 
