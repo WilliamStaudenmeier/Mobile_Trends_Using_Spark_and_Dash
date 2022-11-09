@@ -39,3 +39,5 @@ def test_released():
 def test_first():
 	assert processor.firstsFig1 != None, "firsts not processing"
 
+
+
