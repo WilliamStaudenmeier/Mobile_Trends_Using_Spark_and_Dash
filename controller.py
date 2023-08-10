@@ -56,8 +56,8 @@ async def googles():
         final = final[
             ["App Name", "Released", "Size", "Rating", "Rating Count", "SuperCategory"]
         ]
-    except:
-        print("Failed to load google data")
+    except Exception as e:
+        print("Failed to load google data: ", e)
     ## Reducing google data and casting types
     final.columns = [
         "App_Name",
@@ -105,8 +105,8 @@ async def apples():
             data["Released"], errors="coerce"
         ).dt.strftime("%Y-%m")
         data["Size_Bytes"] = data["Size_Bytes"].astype(int)
-    except:
-        print("Failed to load apple data")
+    except Exception as e:
+        print("Failed to load apple data:", e)
 
 
 loop = asyncio.get_event_loop()
