@@ -58,8 +58,8 @@ async def firsts():
                 .to_frame("First_Released")
                 .reset_index()
             )
-        except:
-            print("Released is null")
+        except Exception as e:
+            print("Released is null: ",e)
         data = data[["App_Name", "First_Released", "Category"]].drop_duplicates()
         data = (
             data.groupby(["First_Released", "Category"])
@@ -93,8 +93,8 @@ async def releases():
                 .sort_values(by="Released")
                 .to_pandas()
             )
-        except:
-            print("New Releases are null")
+        except Exception as e:
+            print("New Releases are null: ",e)
         releasedFig1 = px.line(
             data,
             x="Released",
@@ -115,8 +115,8 @@ async def ratings():
             score["Reviews"] = score["Reviews"].astype(float)
             score["Average_User_Rating"] = score["Average_User_Rating"].astype(float)
             score["Weighted_Rating"] = score["Average_User_Rating"] * score["Reviews"]
-        except:
-            print("Score is null")
+        except Exception as e:
+            print("Score is null: ",e)
         temp = (
             score.groupby(["Category"])["Reviews"]
             .sum()
@@ -155,8 +155,8 @@ async def biggests():
                 "Size_Bytes"
             ].rank("dense", ascending=False)
             bigs = bigs[bigs["Rank"] <= 10]
-        except:
-            print("Table is null")
+        except Exception as e:
+            print("Table is null: ",e)
         bigs = (
             bigs[["App_Name", "Category", "Released_Year", "Size_Bytes", "Rank"]]
             .sort_values(by=["Category", "Released_Year", "Rank"])
